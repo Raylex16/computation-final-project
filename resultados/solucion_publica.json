@@ -1,0 +1,1135 @@
+{
+ "equipo": "Equipo01",
+ "integrantes": [
+  {
+   "codigo": "160005011",
+   "nombre": "Johan Sebastian Forero Agudelo"
+  },
+  {
+   "codigo": "160005004",
+   "nombre": "Santiago Barrera Meza"
+  },
+  {
+   "codigo": "160005010",
+   "nombre": "Jesus Gregorio Delgado"
+  }
+ ],
+ "id_instancia": "UCTP-IS-PUB",
+ "algoritmo": "Greedy 'más restringido primero' (orden por flexibilidad(); cada bloque va a la franja y salón factibles de menor costo incremental S1-S6) + recocido simulado con número fijo de iteraciones sobre horarios siempre factibles; movimientos: mover bloque, intercambiar franjas de bloques en conflicto, cadena de Kempe entre dos franjas y cambio de salón; costo incremental exacto con máscaras de bits por (paquete|profesor, día).",
+ "seed": 20,
+ "semillas_probadas": [
+  10,
+  20,
+  7,
+  1230,
+  46,
+  78,
+  90,
+  54,
+  121,
+  3456
+ ],
+ "iteraciones_local": 3000000,
+ "tiempo_segundos": 173.5,
+ "factible": true,
+ "penalizacion": 27,
+ "violaciones_duras": {
+  "H1": 0,
+  "H2": 0,
+  "H3": 0,
+  "H4": 0,
+  "H5": 0,
+  "H6": 0,
+  "H7": 0
+ },
+ "penalizacion_blanda": {
+  "S1": 0,
+  "S2": 0,
+  "S3": 0,
+  "S4": 25,
+  "S5": 0,
+  "S6": 2
+ },
+ "asignaciones": [
+  {
+   "id_grupo": "603001-CC-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_16",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603001-CC-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_12",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603001-IS-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_12",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603001-IS-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603001-TEL-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603001-TEL-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_08",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603003-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_08",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603003-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_14",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603003-G1",
+   "num_bloque": 3,
+   "id_franja": "LU_12",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603004-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_16",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603101-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_12",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603101-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603101-G1",
+   "num_bloque": 3,
+   "id_franja": "MA_12",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603101-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_10",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603101-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_14",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603101-G2",
+   "num_bloque": 3,
+   "id_franja": "MA_10",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603102-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_14",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603102-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_10",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603102-G1",
+   "num_bloque": 3,
+   "id_franja": "LU_08",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603102-G2",
+   "num_bloque": 1,
+   "id_franja": "MA_08",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603102-G2",
+   "num_bloque": 2,
+   "id_franja": "VI_12",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603102-G2",
+   "num_bloque": 3,
+   "id_franja": "JU_16",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603103-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_16",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603103-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_16",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603103-G1",
+   "num_bloque": 3,
+   "id_franja": "MI_16",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603103-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_14",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603103-G2",
+   "num_bloque": 2,
+   "id_franja": "VI_14",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603103-G2",
+   "num_bloque": 3,
+   "id_franja": "LU_16",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603104-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_10",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603104-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_10",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603104-G2",
+   "num_bloque": 1,
+   "id_franja": "LU_12",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603104-G2",
+   "num_bloque": 2,
+   "id_franja": "JU_14",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603105-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_14",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603105-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_14",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603105-G2",
+   "num_bloque": 1,
+   "id_franja": "VI_10",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603105-G2",
+   "num_bloque": 2,
+   "id_franja": "MI_12",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603201-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_14",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603201-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_08",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603201-G1",
+   "num_bloque": 3,
+   "id_franja": "VI_14",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603201-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_16",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603201-G2",
+   "num_bloque": 2,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603201-G2",
+   "num_bloque": 3,
+   "id_franja": "JU_12",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603202-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_08",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603202-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_16",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603202-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_14",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603202-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_14",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603203-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_14",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603203-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_14",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603203-G1",
+   "num_bloque": 3,
+   "id_franja": "VI_12",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603203-G2",
+   "num_bloque": 1,
+   "id_franja": "LU_16",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603203-G2",
+   "num_bloque": 2,
+   "id_franja": "MA_12",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603203-G2",
+   "num_bloque": 3,
+   "id_franja": "VI_14",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603204-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_16",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603204-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_16",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603204-G2",
+   "num_bloque": 1,
+   "id_franja": "JU_14",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603204-G2",
+   "num_bloque": 2,
+   "id_franja": "MA_10",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603205-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_10",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603205-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_16",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603205-G1",
+   "num_bloque": 3,
+   "id_franja": "LU_10",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603205-G2",
+   "num_bloque": 1,
+   "id_franja": "JU_16",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603205-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603205-G2",
+   "num_bloque": 3,
+   "id_franja": "VI_12",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603301-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603301-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603301-G1",
+   "num_bloque": 3,
+   "id_franja": "JU_16",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603301-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_14",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603301-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_14",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603301-G2",
+   "num_bloque": 3,
+   "id_franja": "JU_14",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603302-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603302-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_12",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603302-G2",
+   "num_bloque": 1,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603302-G2",
+   "num_bloque": 2,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603303-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603303-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_08",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603303-G1",
+   "num_bloque": 3,
+   "id_franja": "LU_10",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603303-G2",
+   "num_bloque": 1,
+   "id_franja": "JU_10",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603303-G2",
+   "num_bloque": 2,
+   "id_franja": "MI_16",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603303-G2",
+   "num_bloque": 3,
+   "id_franja": "LU_12",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603304-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_12",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603304-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_10",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603304-G1",
+   "num_bloque": 3,
+   "id_franja": "VI_16",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603304-G2",
+   "num_bloque": 1,
+   "id_franja": "MA_10",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603304-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_16",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603304-G2",
+   "num_bloque": 3,
+   "id_franja": "JU_12",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603305-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_14",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603305-G2",
+   "num_bloque": 1,
+   "id_franja": "VI_08",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603401-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_14",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603401-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_10",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603401-G1",
+   "num_bloque": 3,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603401-G2",
+   "num_bloque": 1,
+   "id_franja": "VI_16",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603401-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603401-G2",
+   "num_bloque": 3,
+   "id_franja": "JU_10",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G1",
+   "num_bloque": 3,
+   "id_franja": "MI_12",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G2",
+   "num_bloque": 1,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G2",
+   "num_bloque": 2,
+   "id_franja": "JU_12",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603402-G2",
+   "num_bloque": 3,
+   "id_franja": "MI_10",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603403-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_12",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603403-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_12",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603403-G2",
+   "num_bloque": 1,
+   "id_franja": "MA_10",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603403-G2",
+   "num_bloque": 2,
+   "id_franja": "VI_08",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_12",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G1",
+   "num_bloque": 3,
+   "id_franja": "JU_14",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G2",
+   "num_bloque": 1,
+   "id_franja": "MI_12",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G2",
+   "num_bloque": 2,
+   "id_franja": "LU_10",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603404-G2",
+   "num_bloque": 3,
+   "id_franja": "VI_10",
+   "id_salon": "AE-204"
+  },
+  {
+   "id_grupo": "603405-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_10",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603405-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_08",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603405-G2",
+   "num_bloque": 1,
+   "id_franja": "MA_08",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603405-G2",
+   "num_bloque": 2,
+   "id_franja": "VI_14",
+   "id_salon": "AE-LF1"
+  },
+  {
+   "id_grupo": "603501-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_10",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603501-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_12",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603501-G1",
+   "num_bloque": 3,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603502-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_12",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603502-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_10",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603503-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_08",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603503-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_12",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603504-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603504-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_10",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603505-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603505-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "DV-LE1"
+  },
+  {
+   "id_grupo": "603506-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_14",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603601-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603601-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603602-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_16",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603602-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_14",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603603-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603603-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_14",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603604-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_10",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603604-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "DV-LC2"
+  },
+  {
+   "id_grupo": "603605-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_10",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603605-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603605-G1",
+   "num_bloque": 3,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603606-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_12",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603701-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_10",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603701-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_10",
+   "id_salon": "AE-201"
+  },
+  {
+   "id_grupo": "603702-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_12",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603702-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_14",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603703-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_14",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603704-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_12",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603704-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_16",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603705-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_12",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603705-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_12",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603706-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_10",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603706-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_08",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603801-CC-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_16",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603801-CC-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_14",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603801-IS-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_14",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603801-IS-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "603801-TEL-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_08",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603801-TEL-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_14",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603803-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_14",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603803-G1",
+   "num_bloque": 2,
+   "id_franja": "VI_10",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603804-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_12",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603804-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_08",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603805-G1",
+   "num_bloque": 1,
+   "id_franja": "JU_12",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603805-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "AE-202"
+  },
+  {
+   "id_grupo": "603806-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "AE-203"
+  },
+  {
+   "id_grupo": "603901-CC-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_16",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603901-CC-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_08",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "603901-IS-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_16",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603901-IS-G1",
+   "num_bloque": 2,
+   "id_franja": "MA_16",
+   "id_salon": "DV-LC3"
+  },
+  {
+   "id_grupo": "603901-TEL-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_16",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603901-TEL-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_14",
+   "id_salon": "DV-LR1"
+  },
+  {
+   "id_grupo": "603904-G1",
+   "num_bloque": 1,
+   "id_franja": "VI_08",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "603904-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_12",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "ELV-01-G1",
+   "num_bloque": 1,
+   "id_franja": "MI_08",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-01-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_08",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-02-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_12",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-02-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_12",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-03-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_14",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-03-G1",
+   "num_bloque": 2,
+   "id_franja": "JU_10",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-04-G1",
+   "num_bloque": 1,
+   "id_franja": "SA_12",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "ELV-04-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_06",
+   "id_salon": "DV-LC1"
+  },
+  {
+   "id_grupo": "ELV-05-G1",
+   "num_bloque": 1,
+   "id_franja": "LU_14",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "ELV-05-G1",
+   "num_bloque": 2,
+   "id_franja": "MI_10",
+   "id_salon": "DV-LC4"
+  },
+  {
+   "id_grupo": "ELV-06-G1",
+   "num_bloque": 1,
+   "id_franja": "MA_10",
+   "id_salon": "DV-LC5"
+  },
+  {
+   "id_grupo": "ELV-06-G1",
+   "num_bloque": 2,
+   "id_franja": "LU_10",
+   "id_salon": "DV-LC5"
+  }
+ ]
+}

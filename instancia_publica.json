@@ -1,0 +1,5185 @@
+{
+ "meta": {
+  "id_instancia": "UCTP-IS-PUB",
+  "nombre": "Instancia pública",
+  "version": "1.0",
+  "descripcion": "Programa completo con los supuestos base.",
+  "fuente": "PEP Ingeniería de Sistemas 2023 (Tablas 1, 4, 7, 9 y 11) y supuestos S-1 a S-10",
+  "num_franjas": 40,
+  "duracion_bloque_horas": 2,
+  "pesos_restricciones_blandas": {
+   "S1_huecos_paquete": 2,
+   "S2_huecos_profesor": 1,
+   "S3_mismo_dia": 3,
+   "S4_fuera_preferencia": 1,
+   "S5_cambio_salon": 1,
+   "S6_franja_baja_preferencia": 1
+  },
+  "estados_disponibilidad": [
+   "PREFERIDA",
+   "DISPONIBLE",
+   "NO_DISPONIBLE"
+  ],
+  "nota": "Las combinaciones (profesor, franja) que no aparecen en disponibilidad se asumen DISPONIBLE.",
+  "validador_version": "1.0"
+ },
+ "franjas": [
+  {
+   "id_franja": "LU_06",
+   "dia": "LUNES",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "LU_08",
+   "dia": "LUNES",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "LU_10",
+   "dia": "LUNES",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "LU_12",
+   "dia": "LUNES",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "LU_14",
+   "dia": "LUNES",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "LU_16",
+   "dia": "LUNES",
+   "hora_inicio": "16:00",
+   "hora_fin": "18:00",
+   "orden_dia": 5,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "LU_18",
+   "dia": "LUNES",
+   "hora_inicio": "18:00",
+   "hora_fin": "20:00",
+   "orden_dia": 6,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "MA_06",
+   "dia": "MARTES",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "MA_08",
+   "dia": "MARTES",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MA_10",
+   "dia": "MARTES",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MA_12",
+   "dia": "MARTES",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MA_14",
+   "dia": "MARTES",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MA_16",
+   "dia": "MARTES",
+   "hora_inicio": "16:00",
+   "hora_fin": "18:00",
+   "orden_dia": 5,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MA_18",
+   "dia": "MARTES",
+   "hora_inicio": "18:00",
+   "hora_fin": "20:00",
+   "orden_dia": 6,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "MI_06",
+   "dia": "MIERCOLES",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "MI_08",
+   "dia": "MIERCOLES",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MI_10",
+   "dia": "MIERCOLES",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MI_12",
+   "dia": "MIERCOLES",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MI_14",
+   "dia": "MIERCOLES",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MI_16",
+   "dia": "MIERCOLES",
+   "hora_inicio": "16:00",
+   "hora_fin": "18:00",
+   "orden_dia": 5,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "MI_18",
+   "dia": "MIERCOLES",
+   "hora_inicio": "18:00",
+   "hora_fin": "20:00",
+   "orden_dia": 6,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "JU_06",
+   "dia": "JUEVES",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "JU_08",
+   "dia": "JUEVES",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "JU_10",
+   "dia": "JUEVES",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "JU_12",
+   "dia": "JUEVES",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "JU_14",
+   "dia": "JUEVES",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "JU_16",
+   "dia": "JUEVES",
+   "hora_inicio": "16:00",
+   "hora_fin": "18:00",
+   "orden_dia": 5,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "JU_18",
+   "dia": "JUEVES",
+   "hora_inicio": "18:00",
+   "hora_fin": "20:00",
+   "orden_dia": 6,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "VI_06",
+   "dia": "VIERNES",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "VI_08",
+   "dia": "VIERNES",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "VI_10",
+   "dia": "VIERNES",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "VI_12",
+   "dia": "VIERNES",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "VI_14",
+   "dia": "VIERNES",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "VI_16",
+   "dia": "VIERNES",
+   "hora_inicio": "16:00",
+   "hora_fin": "18:00",
+   "orden_dia": 5,
+   "baja_preferencia": false
+  },
+  {
+   "id_franja": "VI_18",
+   "dia": "VIERNES",
+   "hora_inicio": "18:00",
+   "hora_fin": "20:00",
+   "orden_dia": 6,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "SA_06",
+   "dia": "SABADO",
+   "hora_inicio": "06:00",
+   "hora_fin": "08:00",
+   "orden_dia": 0,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "SA_08",
+   "dia": "SABADO",
+   "hora_inicio": "08:00",
+   "hora_fin": "10:00",
+   "orden_dia": 1,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "SA_10",
+   "dia": "SABADO",
+   "hora_inicio": "10:00",
+   "hora_fin": "12:00",
+   "orden_dia": 2,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "SA_12",
+   "dia": "SABADO",
+   "hora_inicio": "12:00",
+   "hora_fin": "14:00",
+   "orden_dia": 3,
+   "baja_preferencia": true
+  },
+  {
+   "id_franja": "SA_14",
+   "dia": "SABADO",
+   "hora_inicio": "14:00",
+   "hora_fin": "16:00",
+   "orden_dia": 4,
+   "baja_preferencia": true
+  }
+ ],
+ "salones": [
+  {
+   "id_salon": "AE-201",
+   "capacidad": 40,
+   "tipo": "AULA",
+   "edificio": "Albert Einstein"
+  },
+  {
+   "id_salon": "AE-202",
+   "capacidad": 40,
+   "tipo": "AULA",
+   "edificio": "Albert Einstein"
+  },
+  {
+   "id_salon": "AE-203",
+   "capacidad": 36,
+   "tipo": "AULA",
+   "edificio": "Albert Einstein"
+  },
+  {
+   "id_salon": "AE-204",
+   "capacidad": 30,
+   "tipo": "AULA",
+   "edificio": "Albert Einstein"
+  },
+  {
+   "id_salon": "AE-LF1",
+   "capacidad": 36,
+   "tipo": "LAB_FISICA",
+   "edificio": "Albert Einstein"
+  },
+  {
+   "id_salon": "DV-LC1",
+   "capacidad": 36,
+   "tipo": "LAB_COMPUTO",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LC2",
+   "capacidad": 36,
+   "tipo": "LAB_COMPUTO",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LC3",
+   "capacidad": 30,
+   "tipo": "LAB_COMPUTO",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LC4",
+   "capacidad": 30,
+   "tipo": "LAB_COMPUTO",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LC5",
+   "capacidad": 25,
+   "tipo": "LAB_COMPUTO",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LE1",
+   "capacidad": 36,
+   "tipo": "LAB_ELECTRONICA",
+   "edificio": "Leonardo Da Vinci"
+  },
+  {
+   "id_salon": "DV-LR1",
+   "capacidad": 34,
+   "tipo": "LAB_REDES",
+   "edificio": "Leonardo Da Vinci"
+  }
+ ],
+ "profesores": [
+  {
+   "id_profesor": "P01",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P02",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P03",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P04",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P05",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P06",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P07",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P08",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P09",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P10",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P11",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P12",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P13",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P14",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P15",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P16",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P17",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P18",
+   "vinculacion": "PLANTA",
+   "max_horas_semana": 16
+  },
+  {
+   "id_profesor": "P19",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P20",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P21",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P22",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P23",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P24",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P25",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P26",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P27",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P28",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P29",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  },
+  {
+   "id_profesor": "P30",
+   "vinculacion": "CATEDRA",
+   "max_horas_semana": 12
+  }
+ ],
+ "disponibilidad": [
+  {
+   "id_profesor": "P01",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P01",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "MI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P02",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P03",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P04",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "MI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P05",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MA_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P06",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "JU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "VI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P07",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P08",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "LU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P09",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "LU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MA_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P10",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "LU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "JU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P11",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MA_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "JU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P12",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "VI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P13",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P14",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P15",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "LU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P16",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "LU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MA_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MA_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P17",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "VI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P18",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MA_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "VI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P19",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "LU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "JU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "VI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "VI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "SA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P20",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "JU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "JU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P21",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "JU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "JU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "VI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P22",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "LU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "LU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "LU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "VI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P23",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "LU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "LU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MA_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MA_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "MI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "JU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "JU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P24",
+   "id_franja": "VI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "LU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "JU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "VI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "VI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "VI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P25",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "LU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MA_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "JU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "VI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "VI_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P26",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "LU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "LU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "VI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P27",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "LU_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MA_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MA_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MA_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "JU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "JU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "VI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "VI_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P28",
+   "id_franja": "VI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "LU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "LU_10",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "LU_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "LU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_14",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "MI_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "JU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "JU_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "VI_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "SA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "SA_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "SA_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P29",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "LU_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "LU_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "LU_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "LU_16",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "LU_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MA_08",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_06",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_12",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "MI_18",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "JU_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "JU_14",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "JU_16",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "VI_08",
+   "estado": "PREFERIDA"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "VI_10",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "VI_12",
+   "estado": "NO_DISPONIBLE"
+  },
+  {
+   "id_profesor": "P30",
+   "id_franja": "SA_14",
+   "estado": "NO_DISPONIBLE"
+  }
+ ],
+ "cursos": [
+  {
+   "id_curso": "603101",
+   "nombre": "Algoritmia y programación",
+   "semestre": 1,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603101",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603102",
+   "nombre": "Introducción a la Ingeniería de Sistemas",
+   "semestre": 1,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603102",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603103",
+   "nombre": "Cálculo diferencial",
+   "semestre": 1,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603103",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603104",
+   "nombre": "Procesos comunicativos",
+   "semestre": 1,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 2,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603104",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603105",
+   "nombre": "Desarrollo del pensamiento lógico matemático",
+   "semestre": 1,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 2,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603105",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603201",
+   "nombre": "Programación orientada a objetos",
+   "semestre": 2,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603201",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603202",
+   "nombre": "Sistemas digitales",
+   "semestre": 2,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_ELECTRONICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603202",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603203",
+   "nombre": "Cálculo integral",
+   "semestre": 2,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603203",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603204",
+   "nombre": "Álgebra lineal",
+   "semestre": 2,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603204",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603205",
+   "nombre": "Física mecánica",
+   "semestre": 2,
+   "tipo": "TP",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_FISICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603205",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603301",
+   "nombre": "Estructuras de datos",
+   "semestre": 3,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603301",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603302",
+   "nombre": "Máquinas digitales",
+   "semestre": 3,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_ELECTRONICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603302",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603303",
+   "nombre": "Cálculo multivariado",
+   "semestre": 3,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603303",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603304",
+   "nombre": "Electricidad y magnetismo",
+   "semestre": 3,
+   "tipo": "TP",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_FISICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603304",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603305",
+   "nombre": "Democracia y paz",
+   "semestre": 3,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603305",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603401",
+   "nombre": "Bases de datos",
+   "semestre": 4,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603401",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603402",
+   "nombre": "Sistemas operativos",
+   "semestre": 4,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603402",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603403",
+   "nombre": "Ecuaciones diferenciales y modelado matemático",
+   "semestre": 4,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603403",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603404",
+   "nombre": "Estadística y probabilidad",
+   "semestre": 4,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603404",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603405",
+   "nombre": "Oscilaciones y ondas",
+   "semestre": 4,
+   "tipo": "TP",
+   "area": "Ba",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_FISICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603405",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603501",
+   "nombre": "Ingeniería de software I",
+   "semestre": 5,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603501",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603502",
+   "nombre": "Pensamiento sistémico",
+   "semestre": 5,
+   "tipo": "T",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:2",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603502",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603503",
+   "nombre": "Matemáticas especiales",
+   "semestre": 5,
+   "tipo": "T",
+   "area": "Ba",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603503",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603504",
+   "nombre": "Procesos estocásticos",
+   "semestre": 5,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603504",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603505",
+   "nombre": "Sistemas de comunicaciones",
+   "semestre": 5,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_ELECTRONICA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603505",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603506",
+   "nombre": "Ciencia, tecnología y desarrollo",
+   "semestre": 5,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603506",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603601",
+   "nombre": "Ingeniería de software II",
+   "semestre": 6,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603601",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603602",
+   "nombre": "Métodos numéricos",
+   "semestre": 6,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603602",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603603",
+   "nombre": "Procesamiento de señales e imágenes",
+   "semestre": 6,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603603",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603604",
+   "nombre": "Optimización",
+   "semestre": 6,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603604",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603605",
+   "nombre": "Redes de computadores",
+   "semestre": 6,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "LAB_REDES",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603605",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603606",
+   "nombre": "Administración financiera para ingeniería",
+   "semestre": 6,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603606",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603701",
+   "nombre": "Metodología de investigación",
+   "semestre": 7,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603701",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603702",
+   "nombre": "Tecnologías avanzadas",
+   "semestre": 7,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603702",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603703",
+   "nombre": "Ética y humanística",
+   "semestre": 7,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603703",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603704",
+   "nombre": "Sistemas distribuidos",
+   "semestre": 7,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603704",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603705",
+   "nombre": "Seguridad de la información",
+   "semestre": 7,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_REDES",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603705",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603706",
+   "nombre": "Formulación y gestión de proyectos TI",
+   "semestre": 7,
+   "tipo": "T",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:2",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603706",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603801-IS",
+   "nombre": "Desarrollo de software basado en procesos de negocio",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "IS",
+   "codigo_plan": "603801",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603801-TEL",
+   "nombre": "Infraestructura de TI y computación en la nube",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_REDES",
+   "origen": "PROFUNDIZACION",
+   "linea": "TEL",
+   "codigo_plan": "603801",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603801-CC",
+   "nombre": "Teoría de la computación",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "CC",
+   "codigo_plan": "603801",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603803",
+   "nombre": "Simulación computacional",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603803",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603804",
+   "nombre": "Arquitectura empresarial",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603804",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "603805",
+   "nombre": "Trabajo de grado 1",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 2,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603805",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603806",
+   "nombre": "Cátedra de la Orinoquia",
+   "semestre": 8,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603806",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603901-IS",
+   "nombre": "Desarrollo de software basado en arquitecturas",
+   "semestre": 9,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "IS",
+   "codigo_plan": "603901",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603901-TEL",
+   "nombre": "Aspectos avanzados de enrutamiento",
+   "semestre": 9,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_REDES",
+   "origen": "PROFUNDIZACION",
+   "linea": "TEL",
+   "codigo_plan": "603901",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603901-CC",
+   "nombre": "Computación inteligente",
+   "semestre": 9,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "CC",
+   "codigo_plan": "603901",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603904",
+   "nombre": "Lenguajes de programación",
+   "semestre": 9,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603904",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603001-IS",
+   "nombre": "DevOps",
+   "semestre": 10,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "IS",
+   "codigo_plan": "603001",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603001-TEL",
+   "nombre": "Blockchain",
+   "semestre": 10,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_REDES",
+   "origen": "PROFUNDIZACION",
+   "linea": "TEL",
+   "codigo_plan": "603001",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603001-CC",
+   "nombre": "Introducción a la analítica de datos",
+   "semestre": 10,
+   "tipo": "TP",
+   "area": "Pz",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "PROFUNDIZACION",
+   "linea": "CC",
+   "codigo_plan": "603001",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603003",
+   "nombre": "Trabajo de grado 2",
+   "semestre": 10,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 4,
+   "relacion": "1:1",
+   "horas_semanales": 6,
+   "num_bloques": 3,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603003",
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "603004",
+   "nombre": "Electiva complementaria",
+   "semestre": 10,
+   "tipo": "T",
+   "area": "Co",
+   "creditos": 2,
+   "relacion": "1:2",
+   "horas_semanales": 2,
+   "num_bloques": 1,
+   "tipo_salon": "AULA",
+   "origen": "PLAN",
+   "linea": null,
+   "codigo_plan": "603004",
+   "codigo_en_pep": true
+  },
+  {
+   "id_curso": "ELV-01",
+   "nombre": "Computación gráfica",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "ELV-02",
+   "nombre": "Desarrollo para móviles",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "ELV-03",
+   "nombre": "Visión por computador",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "ELV-04",
+   "nombre": "Criptografía",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "ELV-05",
+   "nombre": "Minería de procesos",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  },
+  {
+   "id_curso": "ELV-06",
+   "nombre": "Security Engineering",
+   "semestre": 8,
+   "tipo": "TP",
+   "area": "Ps",
+   "creditos": 3,
+   "relacion": "1:1",
+   "horas_semanales": 4,
+   "num_bloques": 2,
+   "tipo_salon": "LAB_COMPUTO",
+   "origen": "ELECTIVA",
+   "linea": null,
+   "codigo_plan": null,
+   "codigo_en_pep": false
+  }
+ ],
+ "grupos": [
+  {
+   "id_grupo": "603101-G1",
+   "id_curso": "603101",
+   "numero_grupo": 1,
+   "id_profesor": "P12",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603101-G2",
+   "id_curso": "603101",
+   "numero_grupo": 2,
+   "id_profesor": "P12",
+   "inscritos": 36,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603102-G1",
+   "id_curso": "603102",
+   "numero_grupo": 1,
+   "id_profesor": "P11",
+   "inscritos": 35,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603102-G2",
+   "id_curso": "603102",
+   "numero_grupo": 2,
+   "id_profesor": "P11",
+   "inscritos": 35,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603103-G1",
+   "id_curso": "603103",
+   "numero_grupo": 1,
+   "id_profesor": "P09",
+   "inscritos": 36,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603103-G2",
+   "id_curso": "603103",
+   "numero_grupo": 2,
+   "id_profesor": "P09",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603104-G1",
+   "id_curso": "603104",
+   "numero_grupo": 1,
+   "id_profesor": "P19",
+   "inscritos": 36,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603104-G2",
+   "id_curso": "603104",
+   "numero_grupo": 2,
+   "id_profesor": "P19",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603105-G1",
+   "id_curso": "603105",
+   "numero_grupo": 1,
+   "id_profesor": "P17",
+   "inscritos": 36,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603105-G2",
+   "id_curso": "603105",
+   "numero_grupo": 2,
+   "id_profesor": "P17",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603201-G1",
+   "id_curso": "603201",
+   "numero_grupo": 1,
+   "id_profesor": "P02",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603201-G2",
+   "id_curso": "603201",
+   "numero_grupo": 2,
+   "id_profesor": "P02",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603202-G1",
+   "id_curso": "603202",
+   "numero_grupo": 1,
+   "id_profesor": "P14",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603202-G2",
+   "id_curso": "603202",
+   "numero_grupo": 2,
+   "id_profesor": "P14",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603203-G1",
+   "id_curso": "603203",
+   "numero_grupo": 1,
+   "id_profesor": "P06",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603203-G2",
+   "id_curso": "603203",
+   "numero_grupo": 2,
+   "id_profesor": "P06",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603204-G1",
+   "id_curso": "603204",
+   "numero_grupo": 1,
+   "id_profesor": "P13",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603204-G2",
+   "id_curso": "603204",
+   "numero_grupo": 2,
+   "id_profesor": "P13",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603205-G1",
+   "id_curso": "603205",
+   "numero_grupo": 1,
+   "id_profesor": "P05",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603205-G2",
+   "id_curso": "603205",
+   "numero_grupo": 2,
+   "id_profesor": "P05",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603301-G1",
+   "id_curso": "603301",
+   "numero_grupo": 1,
+   "id_profesor": "P10",
+   "inscritos": 31,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603301-G2",
+   "id_curso": "603301",
+   "numero_grupo": 2,
+   "id_profesor": "P10",
+   "inscritos": 31,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603302-G1",
+   "id_curso": "603302",
+   "numero_grupo": 1,
+   "id_profesor": "P18",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603302-G2",
+   "id_curso": "603302",
+   "numero_grupo": 2,
+   "id_profesor": "P18",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603303-G1",
+   "id_curso": "603303",
+   "numero_grupo": 1,
+   "id_profesor": "P07",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603303-G2",
+   "id_curso": "603303",
+   "numero_grupo": 2,
+   "id_profesor": "P07",
+   "inscritos": 30,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603304-G1",
+   "id_curso": "603304",
+   "numero_grupo": 1,
+   "id_profesor": "P01",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603304-G2",
+   "id_curso": "603304",
+   "numero_grupo": 2,
+   "id_profesor": "P01",
+   "inscritos": 30,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603305-G1",
+   "id_curso": "603305",
+   "numero_grupo": 1,
+   "id_profesor": "P18",
+   "inscritos": 31,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603305-G2",
+   "id_curso": "603305",
+   "numero_grupo": 2,
+   "id_profesor": "P18",
+   "inscritos": 31,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603401-G1",
+   "id_curso": "603401",
+   "numero_grupo": 1,
+   "id_profesor": "P03",
+   "inscritos": 29,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603401-G2",
+   "id_curso": "603401",
+   "numero_grupo": 2,
+   "id_profesor": "P03",
+   "inscritos": 27,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603402-G1",
+   "id_curso": "603402",
+   "numero_grupo": 1,
+   "id_profesor": "P04",
+   "inscritos": 28,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603402-G2",
+   "id_curso": "603402",
+   "numero_grupo": 2,
+   "id_profesor": "P04",
+   "inscritos": 28,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603403-G1",
+   "id_curso": "603403",
+   "numero_grupo": 1,
+   "id_profesor": "P15",
+   "inscritos": 27,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603403-G2",
+   "id_curso": "603403",
+   "numero_grupo": 2,
+   "id_profesor": "P15",
+   "inscritos": 29,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603404-G1",
+   "id_curso": "603404",
+   "numero_grupo": 1,
+   "id_profesor": "P08",
+   "inscritos": 27,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603404-G2",
+   "id_curso": "603404",
+   "numero_grupo": 2,
+   "id_profesor": "P08",
+   "inscritos": 29,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603405-G1",
+   "id_curso": "603405",
+   "numero_grupo": 1,
+   "id_profesor": "P16",
+   "inscritos": 29,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603405-G2",
+   "id_curso": "603405",
+   "numero_grupo": 2,
+   "id_profesor": "P16",
+   "inscritos": 27,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603501-G1",
+   "id_curso": "603501",
+   "numero_grupo": 1,
+   "id_profesor": "P20",
+   "inscritos": 34,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603502-G1",
+   "id_curso": "603502",
+   "numero_grupo": 1,
+   "id_profesor": "P29",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603503-G1",
+   "id_curso": "603503",
+   "numero_grupo": 1,
+   "id_profesor": "P19",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603504-G1",
+   "id_curso": "603504",
+   "numero_grupo": 1,
+   "id_profesor": "P21",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603505-G1",
+   "id_curso": "603505",
+   "numero_grupo": 1,
+   "id_profesor": "P27",
+   "inscritos": 34,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603506-G1",
+   "id_curso": "603506",
+   "numero_grupo": 1,
+   "id_profesor": "P30",
+   "inscritos": 34,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603601-G1",
+   "id_curso": "603601",
+   "numero_grupo": 1,
+   "id_profesor": "P27",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603602-G1",
+   "id_curso": "603602",
+   "numero_grupo": 1,
+   "id_profesor": "P29",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603603-G1",
+   "id_curso": "603603",
+   "numero_grupo": 1,
+   "id_profesor": "P27",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603604-G1",
+   "id_curso": "603604",
+   "numero_grupo": 1,
+   "id_profesor": "P25",
+   "inscritos": 32,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603605-G1",
+   "id_curso": "603605",
+   "numero_grupo": 1,
+   "id_profesor": "P22",
+   "inscritos": 32,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603606-G1",
+   "id_curso": "603606",
+   "numero_grupo": 1,
+   "id_profesor": "P30",
+   "inscritos": 32,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603701-G1",
+   "id_curso": "603701",
+   "numero_grupo": 1,
+   "id_profesor": "P25",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603702-G1",
+   "id_curso": "603702",
+   "numero_grupo": 1,
+   "id_profesor": "P24",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603703-G1",
+   "id_curso": "603703",
+   "numero_grupo": 1,
+   "id_profesor": "P20",
+   "inscritos": 30,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603704-G1",
+   "id_curso": "603704",
+   "numero_grupo": 1,
+   "id_profesor": "P17",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603705-G1",
+   "id_curso": "603705",
+   "numero_grupo": 1,
+   "id_profesor": "P26",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603706-G1",
+   "id_curso": "603706",
+   "numero_grupo": 1,
+   "id_profesor": "P23",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603801-IS-G1",
+   "id_curso": "603801-IS",
+   "numero_grupo": 1,
+   "id_profesor": "P23",
+   "inscritos": 14,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603801-TEL-G1",
+   "id_curso": "603801-TEL",
+   "numero_grupo": 1,
+   "id_profesor": "P26",
+   "inscritos": 8,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603801-CC-G1",
+   "id_curso": "603801-CC",
+   "numero_grupo": 1,
+   "id_profesor": "P22",
+   "inscritos": 9,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603803-G1",
+   "id_curso": "603803",
+   "numero_grupo": 1,
+   "id_profesor": "P26",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603804-G1",
+   "id_curso": "603804",
+   "numero_grupo": 1,
+   "id_profesor": "P25",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603805-G1",
+   "id_curso": "603805",
+   "numero_grupo": 1,
+   "id_profesor": "P13",
+   "inscritos": 30,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603806-G1",
+   "id_curso": "603806",
+   "numero_grupo": 1,
+   "id_profesor": "P22",
+   "inscritos": 30,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603901-IS-G1",
+   "id_curso": "603901-IS",
+   "numero_grupo": 1,
+   "id_profesor": "P28",
+   "inscritos": 13,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603901-TEL-G1",
+   "id_curso": "603901-TEL",
+   "numero_grupo": 1,
+   "id_profesor": "P29",
+   "inscritos": 7,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603901-CC-G1",
+   "id_curso": "603901-CC",
+   "numero_grupo": 1,
+   "id_profesor": "P30",
+   "inscritos": 8,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603904-G1",
+   "id_curso": "603904",
+   "numero_grupo": 1,
+   "id_profesor": "P30",
+   "inscritos": 28,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603001-IS-G1",
+   "id_curso": "603001-IS",
+   "numero_grupo": 1,
+   "id_profesor": "P16",
+   "inscritos": 12,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603001-TEL-G1",
+   "id_curso": "603001-TEL",
+   "numero_grupo": 1,
+   "id_profesor": "P15",
+   "inscritos": 6,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603001-CC-G1",
+   "id_curso": "603001-CC",
+   "numero_grupo": 1,
+   "id_profesor": "P24",
+   "inscritos": 8,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603003-G1",
+   "id_curso": "603003",
+   "numero_grupo": 1,
+   "id_profesor": "P21",
+   "inscritos": 26,
+   "num_bloques": 3,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "603004-G1",
+   "id_curso": "603004",
+   "numero_grupo": 1,
+   "id_profesor": "P21",
+   "inscritos": 26,
+   "num_bloques": 1,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-01-G1",
+   "id_curso": "ELV-01",
+   "numero_grupo": 1,
+   "id_profesor": "P20",
+   "inscritos": 14,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-02-G1",
+   "id_curso": "ELV-02",
+   "numero_grupo": 1,
+   "id_profesor": "P14",
+   "inscritos": 15,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-03-G1",
+   "id_curso": "ELV-03",
+   "numero_grupo": 1,
+   "id_profesor": "P28",
+   "inscritos": 21,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-04-G1",
+   "id_curso": "ELV-04",
+   "numero_grupo": 1,
+   "id_profesor": "P23",
+   "inscritos": 15,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-05-G1",
+   "id_curso": "ELV-05",
+   "numero_grupo": 1,
+   "id_profesor": "P28",
+   "inscritos": 26,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  },
+  {
+   "id_grupo": "ELV-06-G1",
+   "id_curso": "ELV-06",
+   "numero_grupo": 1,
+   "id_profesor": "P24",
+   "inscritos": 12,
+   "num_bloques": 2,
+   "duracion_bloque": 2
+  }
+ ],
+ "paquetes": [
+  {
+   "id_paquete": "SEM1_A",
+   "id_grupo": "603101-G1"
+  },
+  {
+   "id_paquete": "SEM1_A",
+   "id_grupo": "603102-G1"
+  },
+  {
+   "id_paquete": "SEM1_A",
+   "id_grupo": "603103-G1"
+  },
+  {
+   "id_paquete": "SEM1_A",
+   "id_grupo": "603104-G1"
+  },
+  {
+   "id_paquete": "SEM1_A",
+   "id_grupo": "603105-G1"
+  },
+  {
+   "id_paquete": "SEM1_B",
+   "id_grupo": "603101-G2"
+  },
+  {
+   "id_paquete": "SEM1_B",
+   "id_grupo": "603102-G2"
+  },
+  {
+   "id_paquete": "SEM1_B",
+   "id_grupo": "603103-G2"
+  },
+  {
+   "id_paquete": "SEM1_B",
+   "id_grupo": "603104-G2"
+  },
+  {
+   "id_paquete": "SEM1_B",
+   "id_grupo": "603105-G2"
+  },
+  {
+   "id_paquete": "SEM2_A",
+   "id_grupo": "603201-G1"
+  },
+  {
+   "id_paquete": "SEM2_A",
+   "id_grupo": "603202-G1"
+  },
+  {
+   "id_paquete": "SEM2_A",
+   "id_grupo": "603203-G1"
+  },
+  {
+   "id_paquete": "SEM2_A",
+   "id_grupo": "603204-G1"
+  },
+  {
+   "id_paquete": "SEM2_A",
+   "id_grupo": "603205-G1"
+  },
+  {
+   "id_paquete": "SEM2_B",
+   "id_grupo": "603201-G2"
+  },
+  {
+   "id_paquete": "SEM2_B",
+   "id_grupo": "603202-G2"
+  },
+  {
+   "id_paquete": "SEM2_B",
+   "id_grupo": "603203-G2"
+  },
+  {
+   "id_paquete": "SEM2_B",
+   "id_grupo": "603204-G2"
+  },
+  {
+   "id_paquete": "SEM2_B",
+   "id_grupo": "603205-G2"
+  },
+  {
+   "id_paquete": "SEM3_A",
+   "id_grupo": "603301-G1"
+  },
+  {
+   "id_paquete": "SEM3_A",
+   "id_grupo": "603302-G1"
+  },
+  {
+   "id_paquete": "SEM3_A",
+   "id_grupo": "603303-G1"
+  },
+  {
+   "id_paquete": "SEM3_A",
+   "id_grupo": "603304-G1"
+  },
+  {
+   "id_paquete": "SEM3_A",
+   "id_grupo": "603305-G1"
+  },
+  {
+   "id_paquete": "SEM3_B",
+   "id_grupo": "603301-G2"
+  },
+  {
+   "id_paquete": "SEM3_B",
+   "id_grupo": "603302-G2"
+  },
+  {
+   "id_paquete": "SEM3_B",
+   "id_grupo": "603303-G2"
+  },
+  {
+   "id_paquete": "SEM3_B",
+   "id_grupo": "603304-G2"
+  },
+  {
+   "id_paquete": "SEM3_B",
+   "id_grupo": "603305-G2"
+  },
+  {
+   "id_paquete": "SEM4_A",
+   "id_grupo": "603401-G1"
+  },
+  {
+   "id_paquete": "SEM4_A",
+   "id_grupo": "603402-G1"
+  },
+  {
+   "id_paquete": "SEM4_A",
+   "id_grupo": "603403-G1"
+  },
+  {
+   "id_paquete": "SEM4_A",
+   "id_grupo": "603404-G1"
+  },
+  {
+   "id_paquete": "SEM4_A",
+   "id_grupo": "603405-G1"
+  },
+  {
+   "id_paquete": "SEM4_B",
+   "id_grupo": "603401-G2"
+  },
+  {
+   "id_paquete": "SEM4_B",
+   "id_grupo": "603402-G2"
+  },
+  {
+   "id_paquete": "SEM4_B",
+   "id_grupo": "603403-G2"
+  },
+  {
+   "id_paquete": "SEM4_B",
+   "id_grupo": "603404-G2"
+  },
+  {
+   "id_paquete": "SEM4_B",
+   "id_grupo": "603405-G2"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603501-G1"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603502-G1"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603503-G1"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603504-G1"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603505-G1"
+  },
+  {
+   "id_paquete": "SEM5",
+   "id_grupo": "603506-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603601-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603602-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603603-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603604-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603605-G1"
+  },
+  {
+   "id_paquete": "SEM6",
+   "id_grupo": "603606-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603701-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603702-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603703-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603704-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603705-G1"
+  },
+  {
+   "id_paquete": "SEM7",
+   "id_grupo": "603706-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "603803-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "603804-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "603805-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "603806-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "603801-IS-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM8_IS",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "603803-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "603804-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "603805-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "603806-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "603801-TEL-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM8_TEL",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "603803-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "603804-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "603805-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "603806-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "603801-CC-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM8_CC",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "603904-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "603901-IS-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM9_IS",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "603904-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "603901-TEL-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM9_TEL",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "603904-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "603901-CC-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM9_CC",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "603003-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "603004-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "603001-IS-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM10_IS",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "603003-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "603004-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "603001-TEL-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM10_TEL",
+   "id_grupo": "ELV-06-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "603003-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "603004-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "603001-CC-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-01-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-02-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-03-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-04-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-05-G1"
+  },
+  {
+   "id_paquete": "SEM10_CC",
+   "id_grupo": "ELV-06-G1"
+  }
+ ]
+}
